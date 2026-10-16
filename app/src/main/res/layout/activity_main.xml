@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/fondo"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/titulo_app"
+        android:textColor="@color/verde"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.1"
+        android:layout_marginBottom="6dp" />
+
+    <TextView
+        android:id="@+id/tvContador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tus pasos de hoy: 0"
+        android:textColor="@color/texto"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="28dp" />
+
+    <Button
+        android:id="@+id/btnSumar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sumar un paso"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/verde" />
+
+    <Button
+        android:id="@+id/btnReinisiar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Empezar de nuevo"
+        android:textSize="16sp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/verde" />
+
+    <Button
+        android:id="@+id/btnDetalle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver mi resumen"
+        android:textSize="16sp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/verde" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardPasos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:checkable="true"
+        app:cardBackgroundColor="@color/verdeClaro"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="0dp"
+        app:strokeWidth="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="22dp"
+            android:text="Meta del dia: 10,000 pasitos"
+            android:textColor="@color/texto"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
